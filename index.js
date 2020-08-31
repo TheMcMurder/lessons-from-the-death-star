@@ -12,6 +12,7 @@ import Aside from "./components/Aside";
 import A from "./components/A";
 import Img from "./components/Img.js";
 import MemeImg from './components/MemeImage.js';
+import NextSlideIndicator from './components/NextSlideIndicator.js';
 
 import MDXContent from "./content.mdx";
 
@@ -30,6 +31,7 @@ render(
       Aside,
       Img,
       MemeImg,
+      NextSlideIndicator,
       code: Code,
       inlineCode: Base("code", "bg-gray-200 px-1 rounded"),
       a: A,

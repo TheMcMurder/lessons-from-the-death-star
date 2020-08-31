@@ -6,9 +6,13 @@
 
 ## What this talk is
 
-- <Appear>A breakdown of how we're going to use single-spa at workfront</Appear>
+- <Appear>A breakdown of how we're going to use single-spa at WorkFront</Appear>
 - <Appear>A list of things to keep in mind while we're discussing micro-services</Appear>
 - <Appear>An opportunity to use as many Star Wars memes and references as possible</Appear>
+- <Appear>
+    A discussion on MFE timelines
+    <NextSlideIndicator/>
+  </Appear>
 
 ---
 
@@ -22,17 +26,136 @@
       alt="Ackbar Trap meme"
       src="https://i.pinimg.com/originals/64/88/df/6488df8c11729e47dd008c68511765b1.jpg"
     />
+    <NextSlideIndicator/>
   </Appear>
 
 ---
 
-# Death Star History
-- Massive space-faring battle station
-- Primary weapon can destroy a planet
-![Death Star Image](https://www.stickyminds.com/sites/default/files/article/2014/death-star.jpg){.h-64}
+## Goals of MFEs
+- <Appear>Teams own their code end to end</Appear>
+- <Appear>Independent releases</Appear>
+- <Appear>Independent development</Appear>
+- <Appear>Support multiple frameworks - Eventually</Appear>
+- <Appear>
+  Excellent developer experience
+  <NextSlideIndicator/>
+</Appear>
 
 ---
 
+## Why single-spa
+- <Appear>Meets goals better than all competitors</Appear>
+- <Appear>Unopinionated</Appear>
+- <Appear>Most popular MFE library</Appear>
+- <Appear>2 single-spa maintainers hired</Appear>
+- <Appear>
+  Excellent dev tooling
+  <NextSlideIndicator/>
+</Appear>
+
+---
+
+## What does the Death Star have to do with this?
+<Appear>
+  <Aside warning>The Death Star serves as a warning on how easy it is to build micro-services poorly</Aside>
+  <NextSlideIndicator/>
+</Appear>
+
+---
+# Death Star History
+![Death Star Image](https://www.stickyminds.com/sites/default/files/article/2014/death-star.jpg){.h-64}
+- <Appear>Massive space-faring battle station (Size of the moon)</Appear>
+- <Appear>Primary weapon can destroy a planet</Appear>
+- <Appear>Built by experts (and one subversive)</Appear>
+<Appear>
+  <Aside warning>Eventually destroyed by an attack to the reactor module!</Aside>
+  <NextSlideIndicator/>
+</Appear>
+---
+
+## How did one module destroy the station?
+<Appear>
+  <Aside warning>Tight coupling!</Aside>
+</Appear>
+<Appear>
+  <MemeImg
+    alt='Death Star Blueprints'
+    src="https://i.imgur.com/c2rfS6f.jpg"
+  />
+</Appear>
+<Appear>
+  <MemeImg
+    alt='Death Star Blueprints with reactor module highlighted'
+    src="https://i.imgur.com/0ng4QFd.jpg"
+  />
+</Appear>
+<Appear>
+  <MemeImg
+    alt='Galen Erso - Engineer behind most of the Death Star'
+    src="https://vignette.wikia.nocookie.net/starwars/images/2/26/GalenErso2.jpg/revision/latest?cb=20161206014950"
+    imageClasses='h-64 max-w-full'
+  />
+</Appear>
+<Appear>
+  <MemeImg
+    alt='Death Star Blueprints with reactor module highlighted'
+    src="https://i.imgur.com/0ng4QFd.jpg"
+  />
+</Appear>
+<Appear>
+  <MemeImg
+    alt='Death Star explosion plan'
+    src="https://media1.tenor.com/images/c5780a58c2958d610faf3c0a08ee0873/tenor.gif"
+    imageClasses='max-h-full max-w-full mr-64 mb-24'
+  />
+  <NextSlideIndicator/>
+</Appear>
+
+---
+
+# Migration Plan - Stage 0
+![Stage 0 - Where we currently are](https://i.imgur.com/YEzy5Zx.png)
+
+---
+
+# Migration Plan - Stage 1
+![Stage 1 - Next Stage: Give single-spa/SystemJS control over the page](https://i.imgur.com/LXajsGW.png)
+
+---
+
+# Migration Plan - Stage 2
+![Stage 2 - Move global context services out of Quicksilver](https://i.imgur.com/vxfekQG.png)
+
+---
+
+# Migration Plan - Stage 3
+![Stage 3 - Move Primary navigation out of Quicksilver](https://i.imgur.com/nDbxUbi.png)
+
+---
+
+# Migration Plan - Stage 4 - Repeat
+![Stage 4 - Repeat](https://i.imgur.com/yom1Wja.gif)
+
+---
+
+# Migration Plan - Stage ? MFE Paradise
+![Stage X - Completed migration: All modules have been extracted from QS and now teams can tackle their shims/tech debt with MFE benefits](https://i.imgur.com/6oDiI8o.png)
+
+---
+
+# Timelines
+[Outlined Milestones in Notion](https://www.notion.so/workfront/3d080a471dd146e9bc78a8a8f701dfd7?v=03caea720da74dd9ba600dc771ebcf4a)
+
+---
+
+# Learn from coupling
+<MemeImg
+  alt='X-wing approach on death star'
+  src="https://64.media.tumblr.com/10ea0f117efe5e4be4f84d5ee6df326a/tumblr_nh99rzsiF31r0xw5zo2_500.gif"
+  imageClasses='max-h-full max-w-full mb-64'
+/>
+
+---
 ### Code blocks are supported!
 
 ```js
