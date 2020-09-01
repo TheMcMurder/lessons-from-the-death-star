@@ -106,7 +106,7 @@
   <MemeImg
     alt='Death Star explosion plan'
     src="https://media1.tenor.com/images/c5780a58c2958d610faf3c0a08ee0873/tenor.gif"
-    imageClasses='max-h-full max-w-full mr-64 mb-24'
+    imageClasses='max-h-screen max-w-screen mr-64 mb-24'
   />
   <NextSlideIndicator/>
 </Appear>
@@ -144,7 +144,9 @@
 ---
 
 # Timelines
+
 [Outlined Milestones in Notion](https://www.notion.so/workfront/3d080a471dd146e9bc78a8a8f701dfd7?v=03caea720da74dd9ba600dc771ebcf4a)
+![Are we really doing this?](https://www.themarysue.com/wp-content/uploads/2016/09/star-wars-gif.gif){.mt-2}
 
 ---
 
@@ -152,56 +154,52 @@
 <MemeImg
   alt='X-wing approach on death star'
   src="https://64.media.tumblr.com/10ea0f117efe5e4be4f84d5ee6df326a/tumblr_nh99rzsiF31r0xw5zo2_500.gif"
-  imageClasses='max-h-full max-w-full mb-64'
+  imageClasses='max-h-screen max-w-screen mb-64'
 />
 
 ---
-### Code blocks are supported!
 
-```js
-// With syntax highlighting!
-let a = "test";
-
-const b = false;
-
-function hello(greeting = "world") {
-  return `Hello ${world}!`;
-}
-```
+# Where are we today?
+![Stage 1 - Next Stage: Give single-spa/SystemJS control over the page](https://i.imgur.com/LXajsGW.png)
 
 ---
 
-# `Appear` component
-
-Use keyboard arrow up and down to make elements appear
-
-- <Appear>List item 1</Appear>
-- <Appear>List item 2</Appear>
-- <Appear>List item 3</Appear>
+# Tell me more about the dev experience
+## Workfront inspector demo
 
 ---
 
-# Data in a table
+# How will dev experience change in various stages?
 
-| A   | B   | C   |
-| --- | --- | --- |
-| 1A  | 1B  | 1C  |
-| 2A  | 2B  | 2C  |
-| 3A  | 3B  | 3C  |
+|                                           | 0   | 1   | 2   | 3   | ... | 10  |
+| ----------------------------------------- | --- | --- | --- | --- | --- | --- |
+| no change                                 |  X  |     |     |     |     |     |
+| WF-inspector for QS                       |     |  X  |  X  |  X  |  X  |  X  |
+| WF-inspector for most MFE utilites        |     |     |  X  |  X  |  X  |  X  |
+| WF-inspector for navbar                   |     |     |     |  X  |  X  |  X  |
+| WF-inspector for broken out applications  |     |     |     |     |  X  |  X  |
+| WF-inspector for most applications        |     |     |     |     |     |  X  |
 
 ---
 
-<div className="mx-auto w-auto sm:w-3/4 lg:w-1/2">
+# What can we do now to prepare?
+- <Appear>Think about the boundary layers. How should the modules be divided?</Appear>
+- <Appear>Learn about single-spa MFE types</Appear>
+- <Appear>Help WebPlatform build/review MFE Utilities</Appear>
+- <Appear>Watch Star Wars - including the excellent "The Clone Wars" tv series</Appear>
+- <Appear>Play with single-spa</Appear>
+- <Appear>Ask questions in #ask-web-platform</Appear>
+- <Appear>Participate in checking your areas as we move Stage 1 through envs</Appear>
+- <Appear>Help improve single-spa documentation</Appear>
+- <Appear>Plan the evenetual destruction of the Galactic Empire</Appear>
+- <Appear>Be understanding.</Appear>
 
-# Aside
+---
 
-An `aside` element is usually more appropriate than the Markdown `blockquote`. This component should be used in those instances.
-
-<Aside>Here is some relevant, tangential information.</Aside>
-<Aside info>Here is some indirectly related to callout.</Aside>
-<Aside warning>Here is a warning you should look at!</Aside>
-
-</div>
+# Resources
+- [single-spa.js.org](https://single-spa.js.org)
+- [Timeline notion document](https://www.notion.so/workfront/3d080a471dd146e9bc78a8a8f701dfd7?v=03caea720da74dd9ba600dc771ebcf4a)
+- [Tyler's MFE walkthough](https://medium.com/swlh/developing-and-deploying-micro-frontends-with-single-spa-c8b49f2a1b1d?source=friends_link&sk=8f72c248806e0d023ec8f2c872ef2983)
 
 ---
 
