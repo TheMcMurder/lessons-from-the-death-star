@@ -1,7 +1,7 @@
 <html>
 <style>
   :root {
-    font-size: 20px;
+    font-size: 72px;
     --green: #556567;
     --red: #BC1E22;
     --blue: #394A59;
@@ -30,6 +30,34 @@
 
   .rr-shadow {
     text-shadow: 0 0 .625em var(--red),0 0 1.5625em var(--red),-.0625em 0 .125em rgba(var(--black-rgb),0.5)
+  }
+
+  .terminal {
+    box-shadow: 0 0 .625em var(--blue),0 0 1.5625em rgba(var(--white-rgb, 0.5)),-.0625em 0 .125em rgba(var(--black-rgb),0.5);
+  }
+
+  .terminal table thead tr:first-child th {
+    border-top-width: 0px;
+  }
+
+  .terminal table thead tr:first-child th:first-child {
+    border-left-width: 0px;
+  }
+
+  .terminal table thead tr:first-child th:last-child {
+    border-right-width: 0px;
+  }
+
+  .terminal table tbody tr td:first-child {
+    border-left-width: 0px;
+  }
+
+  .terminal table tbody tr td:last-child {
+    border-right-width: 0px;
+  }
+
+  .terminal table tbody tr:last-child td {
+    border-bottom-width: 0px;
   }
 </style>
 <style>

@@ -22,6 +22,14 @@ const Base = (C, classnames) => (props) => (
   <C {...props} className={cls(classnames, props.className)} />
 );
 
+const Table = ({children}) => (
+  <div className='terminal border-blue border-4 rounded-lg'>
+    <table className='table-auto mx-auto'>
+      {children}
+    </table>
+  </div>
+)
+
 render(
   <MDXProvider
     components={{
@@ -39,9 +47,9 @@ render(
       h2: Base("h2", "text-center text-3xl wb-shadow"),
       h3: Base("h3", "text-center text-2xl wb-shadow"),
       ul: Base("ul", "list-disc list-inside"),
-      table: Base("table", "table-auto mx-auto"),
-      td: Base("td", "px-4 py-2 border"),
-      th: Base("th", "px-4 py-2 border bg-gray-200"),
+      table: Table,
+      td: Base("td", "px-4 py-2 text-lg border-blue border-4"),
+      th: Base("th", "px-4 py-2 text-lg border-blue border-4"),
     }}
   >
     <MDXContent />
